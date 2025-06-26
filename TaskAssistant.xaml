@@ -7,7 +7,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        <!-- Implementing the Task Assistant with Reminders  -->
         <!-- Input Panel -->
         <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,0,10">
             <TextBlock Text="Add New Cybersecurity Task" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>

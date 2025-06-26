@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CybersecurityAssistantApp.Models
 {
+    // Implementing the Task Assistant with Reminders
     public class CyberTask
     {
         public string Title { get; set; }

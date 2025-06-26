@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace CybersecurityAssistantApp
@@ -8,6 +9,7 @@ namespace CybersecurityAssistantApp
     {
         private ActivityLog activityLogWindow;
 
+        // Implementing the Task Assistant with Reminders
         public MainWindow()
         {
             InitializeComponent();

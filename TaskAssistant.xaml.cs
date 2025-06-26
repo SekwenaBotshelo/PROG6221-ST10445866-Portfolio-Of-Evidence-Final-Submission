@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using CybersecurityAssistantApp.Models;
 
 namespace CybersecurityAssistantApp
 {
+    // Implementing the Task Assistant with Reminders
     public partial class TaskAssistant : Window
     {
         private ObservableCollection<CyberTask> tasks = new ObservableCollection<CyberTask>();
