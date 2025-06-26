@@ -6,6 +6,7 @@ using CybersecurityAssistantApp.Models;
 
 namespace CybersecurityAssistantApp
 {
+    // Implementing the Cybersecurity Mini-Game (Quiz) - GUI
     public partial class CyberQuiz : Window
     {
         private List<QuizQuestion> questions;

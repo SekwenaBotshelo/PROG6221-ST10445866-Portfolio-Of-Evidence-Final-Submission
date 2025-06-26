@@ -4,6 +4,7 @@
         Title="Cybersecurity Quiz" Height="500" Width="700">
     <Grid Margin="20">
         <StackPanel>
+            <!-- Implementing the Cybersecurity Mini-Game (Quiz) - GUI -->
             <TextBlock x:Name="txtQuestion" FontSize="18" FontWeight="Bold" TextWrapping="Wrap" Margin="0,0,0,10"/>
 
             <StackPanel x:Name="spAnswers" Margin="0,0,0,10"/>

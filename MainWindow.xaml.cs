@@ -39,6 +39,7 @@ namespace CybersecurityAssistantApp
             taskWindow.Show();
         }
 
+        // Implementing the Cybersecurity Mini-Game(Quiz) - GUI
         private void BtnOpenCyberQuiz_Click(object sender, RoutedEventArgs e)
         {
             var quizWindow = new CyberQuiz(this);

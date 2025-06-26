@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CybersecurityAssistantApp.Models
 {
+    //  Implementing the Cybersecurity Mini-Game (Quiz) - GUI
     public class QuizQuestion
     {
         public string QuestionText { get; set; }
