@@ -1,7 +1,8 @@
 # CybersecurityAssistantApp
 
 Author: Botshelo Koketso Sekwena - ST10445866
-Github Link: https://github.com/SekwenaBotshelo/PROG6221-ST10445866-Portfolio-Of-Evidence-Final-Submission.git 
+Github Link: https://github.com/SekwenaBotshelo/PROG6221-ST10445866-Portfolio-Of-Evidence-Final-Submission.git
+YouTube Video Presentation Link: 
 
 Description:
 A Windows desktop application designed to educate South African citizens on cybersecurity awareness. This chatbot offers interactive guidance, task management, mini-quizzes, natural language processing simulation, and activity logging to improve user engagement and learning.
