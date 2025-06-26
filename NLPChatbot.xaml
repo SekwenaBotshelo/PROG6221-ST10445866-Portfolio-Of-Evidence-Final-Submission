@@ -8,6 +8,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <!-- Implementing Natural Language Processing (NLP) Simulation (GUI) -->
         <!-- Chat display -->
         <TextBox x:Name="txtChatLog"
                  IsReadOnly="True"

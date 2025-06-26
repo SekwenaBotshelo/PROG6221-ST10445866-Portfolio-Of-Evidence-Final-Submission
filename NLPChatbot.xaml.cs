@@ -5,6 +5,7 @@ using CybersecurityAssistantApp.Models;
 
 namespace CybersecurityAssistantApp
 {
+    // Implementing Natural Language Processing(NLP) Simulation(GUI)
     public partial class NlpChatbot : Window
     {
         private MainWindow mainWindow;

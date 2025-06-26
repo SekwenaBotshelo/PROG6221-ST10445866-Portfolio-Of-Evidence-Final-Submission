@@ -46,6 +46,7 @@ namespace CybersecurityAssistantApp
             quizWindow.Show();
         }
 
+        // Implementing Natural Language Processing (NLP) Simulation (GUI)
         private void BtnOpenNlpChat_Click(object sender, RoutedEventArgs e)
         {
             var nlpWindow = new NlpChatbot(this);

@@ -13,6 +13,7 @@
             <Button Content="🗒 Task Assistant" Height="40" Margin="0,0,0,10" Click="BtnOpenTaskAssistant_Click"/>
             <!--  Implementing the Cybersecurity Mini-Game (Quiz) - GUI -->
             <Button Content="🎮 Cybersecurity Quiz" Height="40" Margin="0,0,0,10" Click="BtnOpenCyberQuiz_Click"/>
+            <!-- Implementing Natural Language Processing (NLP) Simulation (GUI) -->
             <Button Content="💬 Chat with Bot" Height="40" Margin="0,0,0,10" Click="BtnOpenNlpChat_Click"/>
             <Button Content="📋 View Activity Log" Height="40" Margin="0" Click="BtnOpenActivityLog_Click"/>
         </StackPanel>
