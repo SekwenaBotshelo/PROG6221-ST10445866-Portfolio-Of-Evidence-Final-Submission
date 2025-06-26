@@ -77,27 +77,27 @@ ________________________________________________________________________________
 Project Structure:
 /CybersecurityAssistantApp
 
-|-- MainWindow.xaml       # Main chat interface UI
+|-- MainWindow.xaml		# Main chat interface UI
 
-|-- MainWindow.xaml.cs    # Main chat interface logic
+|-- MainWindow.xaml.cs		# Main chat interface logic
 
-|-- TaskAssistant.xaml    # Task assistant UI
+|-- TaskAssistant.xaml		# Task assistant UI
 
-|-- TaskAssistant.xaml.cs # Task assistant logic
+|-- TaskAssistant.xaml.cs	# Task assistant logic
 
-|-- MiniGameQuiz.xaml     # Mini-game quiz UI
+|-- MiniGameQuiz.xaml		# Mini-game quiz UI
 
-|-- MiniGameQuiz.xaml.cs  # Quiz logic and flow
+|-- MiniGameQuiz.xaml.cs 	# Quiz logic and flow
 
-|-- NLPProcessor.cs       # NLP simulation logic
+|-- NLPProcessor.cs		# NLP simulation logic
 
-|-- ActivityLog.xaml      # Activity log UI
+|-- ActivityLog.xaml		# Activity log UI
 
-|-- ActivityLog.xaml.cs   # Activity log logic
+|-- ActivityLog.xaml.cs		# Activity log logic
 
-|-- Assets/               # Images, audio files, etc.
+|-- Assets/			# Images, audio files, etc.
 
-|-- README.md             # This file
+|-- README.md			# This file
 
 Development Notes
 
