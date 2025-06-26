@@ -75,29 +75,34 @@ Chatbot: Great! Here is your first question...
 ____________________________________________________________________________________________
 
 Project Structure:
-/CybersecurityAssistantApp
-
-|-- MainWindow.xaml		# Main chat interface UI
-
-|-- MainWindow.xaml.cs		# Main chat interface logic
-
-|-- TaskAssistant.xaml		# Task assistant UI
-
-|-- TaskAssistant.xaml.cs	# Task assistant logic
-
-|-- MiniGameQuiz.xaml		# Mini-game quiz UI
-
-|-- MiniGameQuiz.xaml.cs 	# Quiz logic and flow
-
-|-- NLPProcessor.cs		# NLP simulation logic
-
-|-- ActivityLog.xaml		# Activity log UI
-
-|-- ActivityLog.xaml.cs		# Activity log logic
-
-|-- Assets/			# Images, audio files, etc.
-
-|-- README.md			# This file
+CybersecurityAssistantApp/
+│
+├── Assets/                          # Icons, ASCII art, WAV audio
+│
+├── Data/                            # Logs and local storage
+│   └── ActivityLog.cs
+│
+├── NLP/                             # NLP response manager
+│   └── ResponseManager.cs
+│
+├── Tasks/                           # Reminders and Task Assistant logic
+│   └── TaskManager.cs
+│
+├── Game/                            # Cybersecurity quiz logic
+│   └── QuizManager.cs
+│
+├── Views/                           # All XAML forms and UI screens
+│   ├── MainWindow.xaml
+│   ├── QuizWindow.xaml
+│   ├── TaskWindow.xaml
+│   ├── NLPWindow.xaml
+│   └── LogWindow.xaml
+│
+├── App.xaml                         # Application configuration
+├── App.config                       # Additional settings (if used)
+├── MainWindow.xaml.cs               # Main screen backend logic
+├── CybersecurityAssistantApp.csproj # .NET project configuration
+└── README.md                        # Documentation file
 
 Development Notes
 
