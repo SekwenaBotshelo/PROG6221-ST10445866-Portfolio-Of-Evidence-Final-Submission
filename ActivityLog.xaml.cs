@@ -6,7 +6,6 @@ using CybersecurityAssistantApp.Models;
 
 namespace CybersecurityAssistantApp
 {
-    // Implementing Natural Language Processing(NLP) Simulation(GUI)
     // Implementing Activity Log Feature(GUI)
     public partial class ActivityLog : Window
     {
