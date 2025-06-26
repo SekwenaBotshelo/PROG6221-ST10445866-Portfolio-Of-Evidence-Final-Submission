@@ -18,10 +18,7 @@ jobs:
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.0.x' # Or 7.0.x if you're using 7
-
-    - name: Install WindowsDesktop workload
-      run: dotnet workload install windowsdesktop
+        dotnet-version: '8.0.x' # Change to '7.0.x' if your project uses .NET 7
 
     - name: Restore dependencies
       run: dotnet restore
