@@ -1,0 +1,19 @@
+﻿<Window x:Class="CybersecurityAssistantApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cybersecurity Assistant" Height="450" Width="800" Background="#f2f2f2" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+            <TextBlock Text="Cybersecurity Assistant"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <Button Content="🗒 Task Assistant" Height="40" Margin="0,0,0,10" Click="BtnOpenTaskAssistant_Click"/>
+            <Button Content="🎮 Cybersecurity Quiz" Height="40" Margin="0,0,0,10" Click="BtnOpenCyberQuiz_Click"/>
+            <Button Content="💬 Chat with Bot" Height="40" Margin="0,0,0,10" Click="BtnOpenNlpChat_Click"/>
+            <Button Content="📋 View Activity Log" Height="40" Margin="0" Click="BtnOpenActivityLog_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
