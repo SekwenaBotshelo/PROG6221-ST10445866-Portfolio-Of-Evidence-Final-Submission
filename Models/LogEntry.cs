@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CybersecurityAssistantApp.Models
 {
+    // Implementing Activity Log Feature(GUI)
     public class LogEntry
     {
         public string Message { get; set; }

@@ -53,6 +53,7 @@ namespace CybersecurityAssistantApp
             nlpWindow.Show();
         }
 
+        // Implementing Activity Log Feature(GUI)
         private void BtnOpenActivityLog_Click(object sender, RoutedEventArgs e)
         {
             if (activityLogWindow == null)
