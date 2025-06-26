@@ -1,7 +1,7 @@
 # CybersecurityAssistantApp
 
 Author: Botshelo Koketso Sekwena - ST10445866
-Github Link: 
+Github Link: https://github.com/SekwenaBotshelo/PROG6221-ST10445866-Portfolio-Of-Evidence-Final-Submission.git 
 
 Description:
 A Windows desktop application designed to educate South African citizens on cybersecurity awareness. This chatbot offers interactive guidance, task management, mini-quizzes, natural language processing simulation, and activity logging to improve user engagement and learning.
@@ -61,31 +61,32 @@ Activity Log
 - View recent actions and chatbot interactions.
 - Access the activity log anytime from the main menu.
 
+____________________________________________________________________________________________ 
 Example Interaction:
 ____________________________________________________________________________________________ 
-|  User: Hi, what is phishing?                                                             |
-|  Chatbot: Phishing is a cyber attack where attackers trick you into revealing sensitive  |        |  information...                                                                          |
-|                                                                                          |
-|  User: Remind me to update my password tomorrow.                                         |
-|  Chatbot: Reminder set for updating your password tomorrow.                              |
-|                                                                                          |
-|  User: Start quiz.                                                                       |
-|  Chatbot: Great! Here is your first question...                                          |
+User: Hi, what is phishing?
+Chatbot: Phishing is a cyber attack where attackers trick you into revealing sensitive information...                                                                          
+
+User: Remind me to update my password tomorrow.
+Chatbot: Reminder set for updating your password tomorrow.
+
+User: Start quiz.
+Chatbot: Great! Here is your first question...
 ____________________________________________________________________________________________
 
 Project Structure
 /CybersecurityAssistantApp
-|-- MainWindow.xaml            # Main chat interface UI
-|-- MainWindow.xaml.cs         # Main chat interface logic
-|-- TaskAssistant.xaml         # Task assistant UI
-|-- TaskAssistant.xaml.cs      # Task assistant logic
-|-- MiniGameQuiz.xaml          # Mini-game quiz UI
-|-- MiniGameQuiz.xaml.cs       # Quiz logic and flow
-|-- NLPProcessor.cs            # NLP simulation logic
-|-- ActivityLog.xaml           # Activity log UI
-|-- ActivityLog.xaml.cs        # Activity log logic
-|-- Assets/                    # Images, audio files, etc.
-|-- README.md                  # This file
+|-- MainWindow.xaml       # Main chat interface UI
+|-- MainWindow.xaml.cs    # Main chat interface logic
+|-- TaskAssistant.xaml    # Task assistant UI
+|-- TaskAssistant.xaml.cs # Task assistant logic
+|-- MiniGameQuiz.xaml     # Mini-game quiz UI
+|-- MiniGameQuiz.xaml.cs  # Quiz logic and flow
+|-- NLPProcessor.cs       # NLP simulation logic
+|-- ActivityLog.xaml      # Activity log UI
+|-- ActivityLog.xaml.cs   # Activity log logic
+|-- Assets/               # Images, audio files, etc.
+|-- README.md             # This file
 
 Development Notes
 
@@ -114,9 +115,3 @@ Referances:
 	MA 02210 USA: Cengage 
 
 3.) OpenAI. “ChatGPT.” Chatgpt.com, OpenAI, 2025, chatgpt.com.
-
-
-
-
-        
-
