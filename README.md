@@ -1,128 +1,68 @@
 # CybersecurityAssistantApp
 
-Author: Botshelo Koketso Sekwena - ST10445866
-Github Link: https://github.com/SekwenaBotshelo/PROG6221-ST10445866-Portfolio-Of-Evidence-Final-Submission.git
-YouTube Video Presentation Link: 
+**Author:** Botshelo Koketso Sekwena  
+**Student Number:** ST10445866  
+**Repository:** [GitHub Repository](https://github.com/SekwenaBotshelo/PROG6221-ST10445866-Portfolio-Of-Evidence-Final-Submission)  
+**Video Presentation:** [YouTube Video Presentation Link] *(add your link here)*
 
-Description:
-A Windows desktop application designed to educate South African citizens on cybersecurity awareness. This chatbot offers interactive guidance, task management, mini-quizzes, natural language processing simulation, and activity logging to improve user engagement and learning.
+---
 
-Features:
-- Voice-Over Greeting: Plays a welcoming audio message on startup.
-- Chat Interface: Conversational UI with personalized responses.
-- Task Assistant: Manage cybersecurity-related tasks and reminders.
-- Mini-Game Quiz: Interactive cybersecurity knowledge quizzes.
-- NLP Simulation: Basic natural language processing for dynamic responses.
-- Activity Log: Tracks and displays all chatbot interactions and user activities.
-- Sentiment & Intent Recognition: Adapts responses based on user input tone.
+## 📘 Project Overview
 
-Setup Instructions:
-- Prerequisites:
-  - Windows OS (supports Windows 10 or later)
-  - .NET 6.0 Desktop Runtime or higher installed
-  - Visual Studio 2022 (recommended) or newer with .NET Desktop Development workload installed
- 
-- Installation:
-  - Clone the repository:
-      - /// git clone https://github.com/yourusername/cybersecurity-chatbot.git
-cd cybersecurity-chatbot ///
-  - Open the solution file:
-      - Open CybersecurityAssistantApp.sln in Visual Studio.
-  - Restore NuGet packages:
-      - Visual Studio will automatically restore the packages on build. Alternatively, run:
-          - /// dotnet restore ///
-  - Build the project:
-      - Use Visual Studio’s Build > Build Solution or run:
-          - dotnet build
-       
-  - Run the application:
-      - Start the application via Visual Studio (F5) or from command line:
-          - dotnet run --project CybersecurityAssistantApp
+The **Cybersecurity Assistant App** is a desktop chatbot application developed using **C# and WPF (.NET 6)** for the **PROG6221 Portfolio of Evidence**.  
+Its purpose is to **educate South African citizens** about cybersecurity through interactive modules and practical features.
 
-Usage Instructions:
-Starting the Chatbot
-- When the app starts, a voice greeting plays.
-- You will be prompted to enter your name.
-- Use the chat interface to ask cybersecurity questions or navigate features.
+It combines a friendly chatbot interface with a task manager, a cybersecurity quiz, NLP simulation, and a comprehensive activity log.
 
-Task Assistant
-- Create, view, and delete cybersecurity-related tasks.
-- Set reminders and get notifications.
+---
 
-Mini-Game Quiz
-- Select the quiz from the main menu.
-- Answer multiple-choice questions.
-- Get immediate feedback and scores.
+## 🚀 Features
+### 🗨️ Chat Interface with NLP Simulation
+- Interact using natural language.
+- Responds to topics such as phishing, passwords, reminders, tasks, and more.
+- Simulates keyword-based **intent** and **sentiment detection**.
 
-NLP Simulation
-- Type natural language questions or statements about cybersecurity.
-- The chatbot will respond dynamically based on detected intent and sentiment.
+### 🗒️ Task Assistant
+- Add, delete, and complete cybersecurity-related tasks.
+- Schedule reminders with date and optional 24h time input.
+- Tasks are displayed in a ListView with status toggles.
 
-Activity Log
-- View recent actions and chatbot interactions.
-- Access the activity log anytime from the main menu.
+### 🎮 Cybersecurity Quiz (Mini-Game)
+- 10 multiple-choice questions on safe online behavior.
+- Instant feedback and scoring.
+- Dynamic question navigation and restart capability.
 
-____________________________________________________________________________________________ 
-Example Interaction:
-____________________________________________________________________________________________ 
+### 📋 Activity Log
+- Logs and displays all actions, including:
+  - Tasks added or deleted
+  - Quiz attempts
+  - Chatbot responses
+- Integrated across all modules.
+
+---
+
+## 💬 Example Interaction
+
 User: Hi, what is phishing?
-Chatbot: Phishing is a cyber attack where attackers trick you into revealing sensitive information...                                                                          
+Bot: Phishing is a cyber attack where attackers trick you into revealing sensitive information...
 
 User: Remind me to update my password tomorrow.
-Chatbot: Reminder set for updating your password tomorrow.
+Bot: Reminder set for updating your password tomorrow.
 
 User: Start quiz.
-Chatbot: Great! Here is your first question...
-____________________________________________________________________________________________
+Bot: Great! Here is your first question...
 
-Project Structure:
-CybersecurityAssistantApp/
-│
-├── Assets/                          # Icons, ASCII art, WAV audio
-│
-├── Data/                            # Logs and local storage
-│   └── ActivityLog.cs
-│
-├── NLP/                             # NLP response manager
-│   └── ResponseManager.cs
-│
-├── Tasks/                           # Reminders and Task Assistant logic
-│   └── TaskManager.cs
-│
-├── Game/                            # Cybersecurity quiz logic
-│   └── QuizManager.cs
-│
-├── Views/                           # All XAML forms and UI screens
-│   ├── MainWindow.xaml
-│   ├── QuizWindow.xaml
-│   ├── TaskWindow.xaml
-│   ├── NLPWindow.xaml
-│   └── LogWindow.xaml
-│
-├── App.xaml                         # Application configuration
-├── App.config                       # Additional settings (if used)
-├── MainWindow.xaml.cs               # Main screen backend logic
-├── CybersecurityAssistantApp.csproj # .NET project configuration
-└── README.md                        # Documentation file
+---
 
-Development Notes
-
-The chatbot uses basic keyword matching and sentiment analysis for NLP simulation.
-- Tasks and activity logs are stored locally (extend to cloud storage if needed).
-- The mini-game quiz questions are customizable in the source code.
-
-Troubleshooting
-- If the voice greeting does not play, ensure your sound drivers are up to date.
-- For build errors related to missing dependencies, verify your .NET SDK installation and restore    NuGet packages.
-- If UI elements do not appear correctly, rebuild the project and check for XAML errors.
-
-Contact:
+📧 Contact
 
 For questions or support, please contact:
 
-Botshelo Sekwena — st10445866@imconnect.edu.za
+📩 Email: st10445866@imconnect.edu.za
 
-Referances:
+---
+
+📚 References
 
 1.) Andrew Troelsen, Phil Japikse. (2022). Pro C# 10 with .NET 6 - 
 	Foundational Principles and Practices in Programming .
