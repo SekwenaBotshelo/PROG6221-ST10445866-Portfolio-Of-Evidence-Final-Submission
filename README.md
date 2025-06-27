@@ -7,6 +7,9 @@
 
 ---
 
+## PLEASE NOTE THAT IN THE EVENT THERE MAY BE A FAULTY SUBMISSION, THE SCREENSHOTS, VIDEO PRESENTATION, POWERPOINT PRESENTATION, AND RUN THROUGHS OF THE PROJECT HAVE BEEN ADDED IN THE ARC SUBMISSION IN A ZIP FOLDER!!!
+
+---
 ## 📘 Project Overview
 
 The **Cybersecurity Assistant App** is a desktop chatbot application developed using **C# and WPF (.NET 6)** for the **PROG6221 Portfolio of Evidence**.  
