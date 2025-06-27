@@ -1,6 +1,7 @@
 name: Build CybersecurityAssistantApp
 
 on:
+  workflow_dispatch:  # 👈 Add this to enable manual runs
   push:
     branches: [ main ]
   pull_request:
@@ -25,3 +26,9 @@ jobs:
 
       - name: Build solution
         run: msbuild CybersecurityAssistantApp.sln /p:Configuration=Release
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: CybersecurityApp-Build
+          path: '**/bin/Release/'
