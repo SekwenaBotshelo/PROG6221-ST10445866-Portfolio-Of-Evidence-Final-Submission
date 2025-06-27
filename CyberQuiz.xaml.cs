@@ -6,14 +6,12 @@ using CybersecurityAssistantApp.Models;
 
 namespace CybersecurityAssistantApp
 {
-    // Implementing the Cybersecurity Mini-Game (Quiz) - GUI
     public partial class CyberQuiz : Window
     {
         private List<QuizQuestion> questions;
         private int currentQuestionIndex = 0;
         private int score = 0;
         private RadioButton selectedRadioButton = null;
-
         private MainWindow mainWindow;
 
         public CyberQuiz(MainWindow caller)
@@ -27,58 +25,47 @@ namespace CybersecurityAssistantApp
 
         private void LoadQuestions()
         {
-            questions = new List<QuizQuestion>()
+            questions = new List<QuizQuestion>
             {
                 new QuizQuestion("What should you do if you receive an email asking for your password?",
                     new List<string> { "Reply with your password", "Delete the email", "Report the email as phishing", "Ignore it" },
-                    2,
-                    "Correct! You should report phishing emails to help protect yourself and others."),
+                    2, "Correct! You should report phishing emails to help protect yourself and others."),
 
                 new QuizQuestion("True or False: Using 'password123' is a strong password.",
                     new List<string> { "True", "False" },
-                    1,
-                    "Correct! 'password123' is a very weak password and should never be used."),
+                    1, "Correct! 'password123' is a very weak password and should never be used."),
 
-                // Add 8 more questions similarly...
                 new QuizQuestion("Which of these is the safest practice for passwords?",
                     new List<string> { "Use the same password everywhere", "Use complex, unique passwords", "Write passwords on sticky notes", "Share passwords with friends" },
-                    1,
-                    "Using complex, unique passwords for every account is the safest practice."),
+                    1, "Using complex, unique passwords for every account is the safest practice."),
 
                 new QuizQuestion("What is phishing?",
                     new List<string> { "A type of fishing", "A cyber attack to steal information", "A software update", "A firewall feature" },
-                    1,
-                    "Phishing is a cyber attack where attackers trick you into giving sensitive information."),
+                    1, "Phishing is a cyber attack where attackers trick you into giving sensitive information."),
 
                 new QuizQuestion("True or False: You should never click on suspicious links in emails.",
                     new List<string> { "True", "False" },
-                    0,
-                    "Correct! Clicking suspicious links can lead to malware or scams."),
+                    0, "Correct! Clicking suspicious links can lead to malware or scams."),
 
                 new QuizQuestion("Which of these is NOT a social engineering tactic?",
                     new List<string> { "Pretexting", "Baiting", "Password cracking", "Tailgating" },
-                    2,
-                    "Password cracking is a technical attack, not a social engineering tactic."),
+                    2, "Password cracking is a technical attack, not a social engineering tactic."),
 
                 new QuizQuestion("Two-factor authentication (2FA) is:",
                     new List<string> { "Using two passwords", "Adding a second verification step", "Logging in twice", "An antivirus feature" },
-                    1,
-                    "2FA adds an extra layer of security by requiring a second verification step."),
+                    1, "2FA adds an extra layer of security by requiring a second verification step."),
 
-                new QuizQuestion("What should you do if your computer starts running very slowly after opening an email attachment?",
+                new QuizQuestion("What should you do if your computer runs slowly after opening an email attachment?",
                     new List<string> { "Ignore it", "Run a malware scan", "Delete the attachment only", "Reboot the computer repeatedly" },
-                    1,
-                    "Running a malware scan can help detect and remove harmful software."),
+                    1, "Running a malware scan can help detect and remove harmful software."),
 
                 new QuizQuestion("True or False: Public Wi-Fi networks are always safe to use without precautions.",
                     new List<string> { "True", "False" },
-                    1,
-                    "Correct! Public Wi-Fi can be insecure; use VPNs or avoid sensitive transactions."),
+                    1, "Public Wi-Fi can be insecure; use VPNs or avoid sensitive transactions."),
 
                 new QuizQuestion("What is the best way to keep your software secure?",
                     new List<string> { "Ignore updates", "Install updates promptly", "Use pirated software", "Disable firewalls" },
-                    1,
-                    "Installing updates promptly helps patch security vulnerabilities.")
+                    1, "Installing updates promptly helps patch security vulnerabilities.")
             };
         }
 
@@ -86,7 +73,9 @@ namespace CybersecurityAssistantApp
         {
             txtFeedback.Visibility = Visibility.Collapsed;
             btnNext.IsEnabled = false;
+            btnNext.Visibility = Visibility.Collapsed;
             btnSubmit.IsEnabled = true;
+
             spAnswers.Children.Clear();
             selectedRadioButton = null;
 
@@ -105,10 +94,11 @@ namespace CybersecurityAssistantApp
                         Margin = new Thickness(0, 5, 0, 5),
                         FontSize = 16
                     };
-
                     rb.Checked += AnswerSelected;
                     spAnswers.Children.Add(rb);
                 }
+
+                btnNext.Content = (currentQuestionIndex == questions.Count - 1) ? "Finish" : "Next Question";
             }
             else
             {
@@ -131,6 +121,7 @@ namespace CybersecurityAssistantApp
 
             btnSubmit.IsEnabled = false;
             btnNext.IsEnabled = true;
+            btnNext.Visibility = Visibility.Visible;
 
             int selectedIndex = (int)selectedRadioButton.Tag;
             QuizQuestion currentQ = questions[currentQuestionIndex];
@@ -156,19 +147,32 @@ namespace CybersecurityAssistantApp
             DisplayQuestion();
         }
 
+        private void BtnRestart_Click(object sender, RoutedEventArgs e)
+        {
+            currentQuestionIndex = 0;
+            score = 0;
+
+            btnSubmit.Visibility = Visibility.Visible;
+            btnNext.Visibility = Visibility.Visible;
+            btnRestart.Visibility = Visibility.Collapsed;
+
+            DisplayQuestion();
+            mainWindow.LogActivity("CyberQuiz: Quiz restarted.");
+        }
+
         private void ShowFinalResults()
         {
             txtQuestion.Text = $"Quiz Complete! Your score: {score} out of {questions.Count}";
 
-            string performance;
             double percent = (double)score / questions.Count;
+            string performance;
 
             if (percent >= 0.9)
                 performance = "Excellent! You're a cybersecurity pro!";
             else if (percent >= 0.7)
                 performance = "Good job! Keep learning.";
             else if (percent >= 0.4)
-                performance = "Not bad, but consider reviewing cybersecurity basics.";
+                performance = "Not bad, but review the basics.";
             else
                 performance = "Needs improvement. Stay vigilant!";
 
@@ -181,22 +185,7 @@ namespace CybersecurityAssistantApp
             btnNext.Visibility = Visibility.Collapsed;
             btnRestart.Visibility = Visibility.Visible;
 
-            // Log final score
             mainWindow.LogActivity($"CyberQuiz: Quiz completed with score {score}/{questions.Count}.");
-        }
-
-        private void BtnRestart_Click(object sender, RoutedEventArgs e)
-        {
-            currentQuestionIndex = 0;
-            score = 0;
-
-            btnSubmit.Visibility = Visibility.Visible;
-            btnNext.Visibility = Visibility.Visible;
-            btnRestart.Visibility = Visibility.Collapsed;
-
-            DisplayQuestion();
-
-            mainWindow.LogActivity("CyberQuiz: Quiz restarted.");
         }
     }
 }
