@@ -56,7 +56,7 @@ namespace CybersecurityAssistantApp
         // Implementing Activity Log Feature(GUI)
         private void BtnOpenActivityLog_Click(object sender, RoutedEventArgs e)
         {
-            if (activityLogWindow == null)
+            if (activityLogWindow == null || !activityLogWindow.IsLoaded)
             {
                 activityLogWindow = new ActivityLog(this);
                 activityLogWindow.Show();
@@ -65,6 +65,7 @@ namespace CybersecurityAssistantApp
             {
                 if (!activityLogWindow.IsVisible)
                     activityLogWindow.Show();
+
                 activityLogWindow.Focus();
             }
         }
